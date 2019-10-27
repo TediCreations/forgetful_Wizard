@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Forgetful wizard</title>
+    <link>https://tedicreations.github.io/forgetful_wizard/posts/</link>
+    <description>Recent content in Posts on Forgetful wizard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://tedicreations.github.io/forgetful_wizard/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First post</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/first-post/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/first-post/</guid>
+      <description>Why? There are many spells and this spellbook is responsible for remembering them for me. This makes magic fun and my brain happy.
+When? When I learn a new spell&amp;hellip;
+How? This spellbook is build with Hugo.
+hugo new site &amp;quot;Forgetful_Wizard&amp;quot; cd &amp;quot;Forgetful_Wizard&amp;quot; git init git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &amp;quot;m10c&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  Who? You and me!</description>
+    </item>
+    
+  </channel>
+</rss>

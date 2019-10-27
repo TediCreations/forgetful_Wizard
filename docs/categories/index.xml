@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Forgetful wizard</title>
+    <link>https://tedicreations.github.io/forgetful_wizard/categories/</link>
+    <description>Recent content in Categories on Forgetful wizard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://tedicreations.github.io/forgetful_wizard/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>spell</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/categories/spell/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/categories/spell/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

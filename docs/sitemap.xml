@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/2019/10/first-post/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/categories/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/tags/hugo/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/posts/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/categories/spell/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/tags/</loc>
+    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/series/</loc>
+  </url>
+  
+</urlset>
