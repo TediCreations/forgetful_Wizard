@@ -1,0 +1,75 @@
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+
+#+title: "Setup transmission daemon on Raspberry Pi"
+#+author: Kanelis Elias
+#+date: 2019-10-27
+
+#+hugo_tags: raspberrypi transmission
+#+hugo_categories: "Home Server"
+
+#+hugo_weight: 2001
+#+hugo_draft: false
+#+hugo_auto_set_lastmod: t
+#+hugo_custom_front_matter:
+
+* Intro
+Hardware used: Raspberry Pi 3B+
+[[https://pimylifeup.com/raspberry-pi-transmission/][Source]]
+* Setup
+Update
+#+BEGIN_SRC bash
+  sudo apt update
+  sudo apt upgrade
+#+END_SRC
+Install transmission
+#+BEGIN_SRC bash
+  sudo apt install transmission-daemon
+#+END_SRC
+We need to stop the daemon because it is automatically started.
+#+BEGIN_SRC bash
+  sudo systemctl stop transmission-daemon
+#+END_SRC
+Create torrent directories
+#+BEGIN_SRC bash
+  sudo mkdir -p /media/HDD/torrent-inprogress
+  sudo mkdir -p /media/HDD/torrent-complete
+#+END_SRC
+Give user pi access over these directories
+*SOS! This had no effect*
+#+BEGIN_SRC bash
+  sudo chown -R pi:pi /media/HDD/torrent-inprogress
+  sudo chown -R pi:pi /media/HDD/torrent-complete
+#+END_SRC
+* Configure transmission
+Edit configuration file
+#+BEGIN_SRC bash
+  sudo nano /etc/transmission-daemon/settings.json
+#+END_SRC
+Modify these configurations options with below changes
+#+BEGIN_EXAMPLE
+  "incomplete-dir": "/media/HDD/torrent-inprogress",
+  "download-dir":   "/media/HDD/torrent_complete",
+  "incomplete-dir-enabled": true,
+  "rpc-password":  "Your_Password",
+  "rpc-username":  "Your_Username",
+  "rpc-whitelist": "192.168.*.*",
+#+END_EXAMPLE
+* User permissions
+Old way is to add user pi into the debian-transmission group
+#+BEGIN_SRC bash
+  sudo usermod -a -G debian-transmission pi
+#+END_SRC
+Newer way is to add user debian-transmission into the pi group
+#+BEGIN_SRC bash
+  sudo usermod -a -G pi debian-transmission
+#+END_SRC
+* Restart
+Now we need to tell the service manager to reload all service configuration files by running the following command. Otherwise, systemctl will try to use the older version of the service file.
+#+BEGIN_SRC bash
+  sudo systemctl daemon-reload
+#+END_SRC
+Start back up the Transmission daemon service
+#+BEGIN_SRC bash
+  sudo systemctl start transmission-daemon
+#+END_SRC

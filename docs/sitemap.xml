@@ -18,8 +18,18 @@
   </url>
   
   <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/2019/10/setup-transmission-daemon-on-raspberry-pi/</loc>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/2019/10/first-post/</loc>
     <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/categories/</loc>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +39,12 @@
   
   <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/</loc>
-    <lastmod>2019-10-27T17:45:20+02:00</lastmod>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/categories/home-server/</loc>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
   </url>
   
   <url>
@@ -39,22 +54,27 @@
   
   <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/posts/</loc>
-    <lastmod>2019-10-27T17:45:20+02:00</lastmod>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/tags/raspberrypi/</loc>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/tags/</loc>
-    <lastmod>2019-10-27T17:45:20+02:00</lastmod>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/tags/transmission/</loc>
+    <lastmod>2019-10-27T20:46:40+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/tags/wine/</loc>
     <lastmod>2019-10-27T17:28:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tedicreations.github.io/forgetful_wizard/categories/</loc>
-    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
   </url>
   
   <url>

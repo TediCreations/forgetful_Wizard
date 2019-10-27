@@ -42,6 +42,21 @@ hugo new site quickstart cd quickstart git init  Add an new theme git submodule 
     </item>
     
     <item>
+      <title>Setup transmission daemon on Raspberry Pi</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/setup-transmission-daemon-on-raspberry-pi/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/setup-transmission-daemon-on-raspberry-pi/</guid>
+      <description>Intro Hardware used: Raspberry Pi 3B+ Source
+Setup Update
+sudo apt update sudo apt upgrade  Install transmission
+sudo apt install transmission-daemon  We need to stop the daemon because it is automatically started.
+sudo systemctl stop transmission-daemon  Create torrent directories
+sudo mkdir -p /media/HDD/torrent-inprogress sudo mkdir -p /media/HDD/torrent-complete  Give user pi access over these directories SOS! This had no effect
+sudo chown -R pi:pi /media/HDD/torrent-inprogress sudo chown -R pi:pi /media/HDD/torrent-complete  Configure transmission Edit configuration file</description>
+    </item>
+    
+    <item>
       <title>First post</title>
       <link>https://tedicreations.github.io/forgetful_wizard/2019/10/first-post/</link>
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0300</pubDate>
