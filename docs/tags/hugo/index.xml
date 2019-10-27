@@ -18,8 +18,7 @@
       
       <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/</guid>
       <description> Create a new site Create a new site with the name &amp;ldquo;quickstart&amp;rdquo;.
-hugo new site quickstart cd quickstart git init  Add an new theme I added the theme.
-git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &amp;quot;m10c&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  Add a post hugo new posts/my-first-post.md  </description>
+hugo new site quickstart cd quickstart git init  Add an new theme git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &amp;quot;m10c&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  Add a post hugo new posts/my-first-post.md  Run local server hugo -D server --navigateToChanged  </description>
     </item>
     
     <item>

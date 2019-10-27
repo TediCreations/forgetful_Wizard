@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Intro to Hugo // Forgetful wizard</title>
+    <title>Disable images at Firefox // Forgetful wizard</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.57.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,17 +11,17 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Intro to Hugo"/>
-<meta name="twitter:description" content=" Create a new site Create a new site with the name &ldquo;quickstart&rdquo;.
-hugo new site quickstart cd quickstart git init  Add an new theme git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &quot;m10c&quot;&#39; &gt;&gt; config.toml  Add a post hugo new posts/my-first-post.md  Run local server hugo -D server --navigateToChanged  "/>
+<meta name="twitter:title" content="Disable images at Firefox"/>
+<meta name="twitter:description" content="Disable image rendering in Firefox Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop. Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.
+ Open Firefox Type about: config in the address bar. Search for permissions.default.image and adjust the value to 2."/>
 
-    <meta property="og:title" content="Intro to Hugo" />
-<meta property="og:description" content=" Create a new site Create a new site with the name &ldquo;quickstart&rdquo;.
-hugo new site quickstart cd quickstart git init  Add an new theme git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &quot;m10c&quot;&#39; &gt;&gt; config.toml  Add a post hugo new posts/my-first-post.md  Run local server hugo -D server --navigateToChanged  " />
+    <meta property="og:title" content="Disable images at Firefox" />
+<meta property="og:description" content="Disable image rendering in Firefox Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop. Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.
+ Open Firefox Type about: config in the address bar. Search for permissions.default.image and adjust the value to 2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/" />
+<meta property="og:url" content="https://tedicreations.github.io/forgetful_wizard/2019/10/disable-images-at-firefox/" />
 <meta property="article:published_time" content="2019-10-27T00:00:00+03:00" />
-<meta property="article:modified_time" content="2019-10-27T17:09:20+02:00" />
+<meta property="article:modified_time" content="2019-10-27T17:40:08+02:00" />
 
 
   </head>
@@ -53,7 +53,7 @@ hugo new site quickstart cd quickstart git init  Add an new theme git submodule 
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">Intro to Hugo</h1>
+      <h1 class ="post-title">Disable images at Firefox</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -73,35 +73,53 @@ hugo new site quickstart cd quickstart git init  Add an new theme git submodule 
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
 </svg>
-          <a class="tag" href="https://tedicreations.github.io/forgetful_wizard/tags/hugo/">hugo</a></div></div>
+          <a class="tag" href="https://tedicreations.github.io/forgetful_wizard/tags/firefox/">firefox</a></div></div>
     </header>
     <div class="post-content">
       
 
-<h2 id="create-a-new-site">Create a new site</h2>
+<h2 id="disable-image-rendering-in-firefox">Disable image rendering in Firefox</h2>
 
-<p>Create a new site with the name &ldquo;quickstart&rdquo;.</p>
+<p>Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop.
+Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.</p>
 
-<pre><code class="language-bash">hugo new site quickstart
-cd quickstart
-git init
-</code></pre>
+<ol>
+<li>Open Firefox</li>
+<li>Type <strong>about: config</strong> in the address bar.</li>
 
-<h2 id="add-an-new-theme">Add an new theme</h2>
+<li><p>Search for <strong>permissions.default.image</strong> and adjust the value to <strong>2</strong>. The default value is <strong>1</strong> by default.</p>
 
-<pre><code class="language-bash">git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c
-echo 'theme = &quot;m10c&quot;' &gt;&gt; config.toml
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
 
-<h2 id="add-a-post">Add a post</h2>
+<tbody>
+<tr>
+<td>1</td>
+<td>Allow all images to load</td>
+</tr>
 
-<pre><code class="language-bash">hugo new posts/my-first-post.md
-</code></pre>
+<tr>
+<td>2</td>
+<td>Block all images from loading</td>
+</tr>
 
-<h2 id="run-local-server">Run local server</h2>
+<tr>
+<td>3</td>
+<td>Prevent third-party images from loading</td>
+</tr>
 
-<pre><code class="language-bash">hugo -D server --navigateToChanged
-</code></pre>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+</ol>
 
     </div>
     <div class="post-footer">

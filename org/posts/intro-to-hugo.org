@@ -21,7 +21,6 @@ Create a new site with the name "quickstart".
   git init
 #+END_SRC
 * Add an new theme
-I added the theme.
 #+BEGIN_SRC bash
   git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c
   echo 'theme = "m10c"' >> config.toml
@@ -29,4 +28,8 @@ I added the theme.
 * Add a post
 #+BEGIN_SRC bash
   hugo new posts/my-first-post.md
+#+END_SRC
+* Run local server
+#+BEGIN_SRC bash
+  hugo -D server --navigateToChanged
 #+END_SRC

@@ -1,0 +1,29 @@
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+
+#+title: "Install and setup wine"
+#+author: Kanelis Elias
+#+date: 2019-10-27
+
+#+hugo_tags: wine
+#+hugo_categories:
+
+#+hugo_weight: 2001
+#+hugo_draft: false
+#+hugo_auto_set_lastmod: t
+#+hugo_custom_front_matter:
+
+* Install windows compatibility layer
+#+BEGIN_SRC bash
+  sudo apt-get install wine-stable
+  sudo apt-get install winetricks
+#+END_SRC
+* Configure it
+Add fonts or windows components
+#+BEGIN_SRC bash
+winetricks
+#+END_SRC
+* Install your software
+#+BEGIN_SRC bash
+wine <program>
+#+END_SRC

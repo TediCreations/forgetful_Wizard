@@ -12,14 +12,33 @@
     
     
     <item>
+      <title>Disable images at Firefox</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/disable-images-at-firefox/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/disable-images-at-firefox/</guid>
+      <description>Disable image rendering in Firefox Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop. Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.
+ Open Firefox Type about: config in the address bar. Search for permissions.default.image and adjust the value to 2.</description>
+    </item>
+    
+    <item>
+      <title>Install and setup wine</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/install-and-setup-wine/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/install-and-setup-wine/</guid>
+      <description> Install windows compatibility layer sudo apt-get install wine-stable sudo apt-get install winetricks  Configure it Add fonts or windows components
+winetricks  Install your software wine &amp;lt;program&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>Intro to Hugo</title>
       <link>https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
       
       <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/</guid>
       <description> Create a new site Create a new site with the name &amp;ldquo;quickstart&amp;rdquo;.
-hugo new site quickstart cd quickstart git init  Add an new theme I added the theme.
-git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &amp;quot;m10c&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  Add a post hugo new posts/my-first-post.md  </description>
+hugo new site quickstart cd quickstart git init  Add an new theme git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &amp;quot;m10c&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  Add a post hugo new posts/my-first-post.md  Run local server hugo -D server --navigateToChanged  </description>
     </item>
     
     <item>

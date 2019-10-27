@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox on Forgetful wizard</title>
+    <link>https://tedicreations.github.io/forgetful_wizard/tags/firefox/</link>
+    <description>Recent content in firefox on Forgetful wizard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://tedicreations.github.io/forgetful_wizard/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disable images at Firefox</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/disable-images-at-firefox/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/disable-images-at-firefox/</guid>
+      <description>Disable image rendering in Firefox Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop. Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.
+ Open Firefox Type about: config in the address bar. Search for permissions.default.image and adjust the value to 2.</description>
+    </item>
+    
+  </channel>
+</rss>

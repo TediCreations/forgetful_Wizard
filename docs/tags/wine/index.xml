@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wine on Forgetful wizard</title>
+    <link>https://tedicreations.github.io/forgetful_wizard/tags/wine/</link>
+    <description>Recent content in wine on Forgetful wizard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://tedicreations.github.io/forgetful_wizard/tags/wine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install and setup wine</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/install-and-setup-wine/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/install-and-setup-wine/</guid>
+      <description> Install windows compatibility layer sudo apt-get install wine-stable sudo apt-get install winetricks  Configure it Add fonts or windows components
+winetricks  Install your software wine &amp;lt;program&amp;gt;  </description>
+    </item>
+    
+  </channel>
+</rss>

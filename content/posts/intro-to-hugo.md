@@ -2,7 +2,7 @@
 title = "Intro to Hugo"
 author = ["Kanelis Elias"]
 date = 2019-10-27
-lastmod = 2019-10-27T16:56:18+02:00
+lastmod = 2019-10-27T17:09:20+02:00
 tags = ["hugo"]
 draft = false
 weight = 2001
@@ -21,8 +21,6 @@ git init
 
 ## Add an new theme {#add-an-new-theme}
 
-I added the theme.
-
 ```bash
 git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c
 echo 'theme = "m10c"' >> config.toml
@@ -33,4 +31,11 @@ echo 'theme = "m10c"' >> config.toml
 
 ```bash
 hugo new posts/my-first-post.md
+```
+
+
+## Run local server {#run-local-server}
+
+```bash
+hugo -D server --navigateToChanged
 ```
