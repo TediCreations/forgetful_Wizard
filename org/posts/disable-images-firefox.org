@@ -14,7 +14,7 @@
 #+hugo_custom_front_matter:
 
 * Disable image rendering in Firefox
-Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop.
+Sometime ago I did not have an ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop.
 Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.
 
 1. Open Firefox

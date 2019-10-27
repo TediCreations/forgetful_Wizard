@@ -2,7 +2,7 @@
 title = "Disable images at Firefox"
 author = ["Kanelis Elias"]
 date = 2019-10-27
-lastmod = 2019-10-27T17:40:08+02:00
+lastmod = 2019-10-27T17:45:20+02:00
 tags = ["firefox"]
 draft = false
 weight = 2001
@@ -10,7 +10,7 @@ weight = 2001
 
 ## Disable image rendering in Firefox {#disable-image-rendering-in-firefox}
 
-Sometime ago I did not have a ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop.
+Sometime ago I did not have an ADSL internet connection at home. I managed to make my smartphone a hotspot and accessing its internet connection via my laptop.
 Disabling the image rendering proved to save some change. You only need to adjust the settings via about:config.
 
 1.  Open Firefox
