@@ -1,0 +1,33 @@
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+
+#+hugo_weight: 2001
+#+hugo_auto_set_lastmod: t
+
+#+title: First post
+
+#+date: 2019-10-22
+#+author: Kanelis Elias
+
+#+hugo_tags: hugo
+#+hugo_categories: spell
+#+hugo_menu: :menu "main" :weight 2001
+#+hugo_custom_front_matter: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+
+#+hugo_draft: false
+
+* Why?
+There are many spells and this spellbook is responsible for remembering them for me. This makes magic fun and my brain happy.
+* When?
+When I learn a new spell...
+* How?
+This spellbook is build with Hugo.
+#+BEGIN_SRC sh
+  hugo new site "Forgetful_Wizard"
+  cd "Forgetful_Wizard"
+  git init
+  git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+  echo 'theme = "m10c"' >> config.toml
+#+END_SRC
+* Who?
+You and me!

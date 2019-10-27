@@ -1,3 +1,45 @@
-baseURL = "http://example.org/"
+baseURL = "https://tedicreations.github.io/forgetful_wizard/"
+publishdir = "docs"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Forgetful wizard"
+
+theme = "m10c"
+
+[permalinks]
+  posts = "/:year/:month/:title/"
+
+
+[params]
+  author = "Kanelis Elias"
+  description = "Shall write it down and keep mind clean"
+
+  #highlight = true
+  #highlightStyle = "solarized-dark"
+  #highlightLanguages = ["go", "c++", "scala", "swift"]
+
+  pygmentsCodefences = true
+  pygmentsCodefencesGuessSyntax = true
+  pygmentsStyle = "monokai"
+
+  [[params.social]]
+    name = "mail"
+    url = "mailto:hkanelhs@yahoo.gr"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/TediCreations"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/eliaskanelis/"
+
+# Green theme
+#[params.style]
+  #darkestColor = "#000000"
+  #darkColor = "#000000"
+  #primaryColor = "#ff0000"
+  #lightColor = "#ff0000"
+  #lightestColor = "#ff0000"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"

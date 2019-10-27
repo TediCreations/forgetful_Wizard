@@ -1,0 +1,17 @@
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+
+#+title: "{{ replace .Name "-" " " | title }}"
+#+author: Kanelis Elias
+#+date: {{ .Date }}
+
+#+hugo_tags:
+#+hugo_categories:
+
+#+hugo_weight: 2001
+#+hugo_draft: false
+#+hugo_auto_set_lastmod: t
+#+hugo_custom_front_matter:
+
+* New post
+TODO
