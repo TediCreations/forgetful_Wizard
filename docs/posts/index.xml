@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Forgetful wizard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://tedicreations.github.io/forgetful_wizard/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Intro to Hugo</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/</guid>
+      <description> Create a new site Create a new site with the name &amp;ldquo;quickstart&amp;rdquo;.
+hugo new site quickstart cd quickstart git init  Add an new theme I added the theme.
+git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c echo &#39;theme = &amp;quot;m10c&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  Add a post hugo new posts/my-first-post.md  </description>
+    </item>
     
     <item>
       <title>First post</title>

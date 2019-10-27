@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/2019/10/intro-to-hugo/</loc>
+    <lastmod>2019-10-27T16:56:18+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/2019/10/first-post/</loc>
     <lastmod>2019-10-27T16:01:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/</loc>
+    <lastmod>2019-10-27T16:56:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/tags/hugo/</loc>
+    <lastmod>2019-10-27T16:56:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/posts/</loc>
+    <lastmod>2019-10-27T16:56:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tedicreations.github.io/forgetful_wizard/tags/</loc>
+    <lastmod>2019-10-27T16:56:18+02:00</lastmod>
   </url>
   
   <url>
@@ -13,27 +38,7 @@
   </url>
   
   <url>
-    <loc>https://tedicreations.github.io/forgetful_wizard/</loc>
-    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tedicreations.github.io/forgetful_wizard/tags/hugo/</loc>
-    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tedicreations.github.io/forgetful_wizard/posts/</loc>
-    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tedicreations.github.io/forgetful_wizard/categories/spell/</loc>
-    <lastmod>2019-10-27T16:01:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tedicreations.github.io/forgetful_wizard/tags/</loc>
     <lastmod>2019-10-27T16:01:50+02:00</lastmod>
   </url>
   
