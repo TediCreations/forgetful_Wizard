@@ -1,0 +1,55 @@
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+
+#+title: "Setup DLNA server on Raspberry Pi"
+#+author: Kanelis Elias
+#+date: 2019-11-10
+
+#+hugo_tags: dlna raspberrypi
+#+hugo_categories:
+
+#+hugo_weight: 2001
+#+hugo_draft: false
+#+hugo_auto_set_lastmod: t
+#+hugo_custom_front_matter:
+
+* Setup DLNA server on RAspberry Pi
+** Installation
+#+BEGIN_SRC bash
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo apt-get install minidlna
+#+END_SRC
+** Mount hard drive
+Connect an external hard drive.
+#+BEGIN_SRC bash
+  sudo nano /etc/fstab
+#+END_SRC
+Add this line. Change only the /dev of your hard drive. It is assumed that the hdd is fat32 formatted.
+#+begin_example
+  /dev/sda1    /media/HDD   vfat    defaults     0        2
+#+end_example
+** Configuration
+Open the file /etc/minidlna.conf
+#+BEGIN_SRC bash
+  sudo nano /etc/minidlna.conf
+#+END_SRC
+and change this
+#+begin_example
+  #friendly_name=
+  # * "A" for audio (eg. media_dir=A,/var/lib/minidlna/music)
+  # * "P" for pictures (eg. media_dir=P,/var/lib/minidlna/pictures)
+  # * "V" for video (eg. media_dir=V,/var/lib/minidlna/videos)
+#+end_example
+into this:
+#+begin_example
+  friendly_name="MINIDLNA"
+  media_dir=A,/media/HDD/Music
+  media_dir=P,/media/HDD/Pictures
+  media_dir=V,/media/HDD/Movies
+#+end_example
+** Restart server
+#+BEGIN_SRC bash
+  sudo service minidlna restart
+  sudo service minidlna force-reload
+#+END_SRC

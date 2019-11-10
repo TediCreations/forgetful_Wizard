@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dlna on Forgetful wizard</title>
+    <link>https://tedicreations.github.io/forgetful_wizard/tags/dlna/</link>
+    <description>Recent content in dlna on Forgetful wizard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tedicreations.github.io/forgetful_wizard/tags/dlna/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup DLNA server on Raspberry Pi</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/11/setup-dlna-server-on-raspberry-pi/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/11/setup-dlna-server-on-raspberry-pi/</guid>
+      <description>Setup DLNA server on RAspberry Pi Installation sudo apt-get update sudo apt-get upgrade sudo apt-get install minidlna  Mount hard drive Connect an external hard drive.
+sudo nano /etc/fstab  Add this line. Change only the /dev of your hard drive. It is assumed that the hdd is fat32 formatted.
+/dev/sda1 /media/HDD vfat defaults 0 2  Configuration Open the file /etc/minidlna.conf
+sudo nano /etc/minidlna.conf  and change this</description>
+    </item>
+    
+  </channel>
+</rss>

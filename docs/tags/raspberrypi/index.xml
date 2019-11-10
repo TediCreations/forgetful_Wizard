@@ -22,6 +22,18 @@ writeSDCard ~/rasbian.img  Enable headless ssh  Add a file named &amp;ldquo;ssh&
     </item>
     
     <item>
+      <title>Setup DLNA server on Raspberry Pi</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/11/setup-dlna-server-on-raspberry-pi/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/11/setup-dlna-server-on-raspberry-pi/</guid>
+      <description>Setup DLNA server on RAspberry Pi Installation sudo apt-get update sudo apt-get upgrade sudo apt-get install minidlna  Mount hard drive Connect an external hard drive.
+sudo nano /etc/fstab  Add this line. Change only the /dev of your hard drive. It is assumed that the hdd is fat32 formatted.
+/dev/sda1 /media/HDD vfat defaults 0 2  Configuration Open the file /etc/minidlna.conf
+sudo nano /etc/minidlna.conf  and change this</description>
+    </item>
+    
+    <item>
       <title>Setup transmission daemon on Raspberry Pi</title>
       <link>https://tedicreations.github.io/forgetful_wizard/2019/10/setup-transmission-daemon-on-raspberry-pi/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
