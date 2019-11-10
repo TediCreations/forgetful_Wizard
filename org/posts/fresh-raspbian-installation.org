@@ -1,0 +1,51 @@
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+
+#+title: "Fresh Raspbian Installation"
+#+author: Kanelis Elias
+#+date: 2019-11-10
+
+#+hugo_tags: raspberrypi raspbian
+#+hugo_categories:
+
+#+hugo_weight: 2001
+#+hugo_draft: false
+#+hugo_auto_set_lastmod: t
+#+hugo_custom_front_matter:
+
+* Fresh Raspbian Image
+** Burn the image in an SD Card
+You can use my script: https://raw.githubusercontent.com/TediCreations/.dotfiles/master/files/bin/utils/writeSDCard
+#+BEGIN_SRC bash
+writeSDCard ~/rasbian.img
+#+END_SRC
+** Enable headless ssh
+1. Add a file named "ssh" inside the /boot directory.
+2. Add a file named "wpa_supplicant.conf" inside the /boot directory with the following contents.
+#+begin_example
+  ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+  update_config=1
+  country=us
+
+  network={
+          ssid="<Name of your WiFi>"
+          psk="<Password for your WiFi>"
+          scan_ssid=1
+  }
+#+end_example
+** Make it secure
+Change the default password of user pi
+#+BEGIN_SRC bash
+passwd
+#+END_SRC
+** Make a new user and lock pi user
+#+BEGIN_SRC bash
+sudo adduser tedi
+sudo usermod -a -G adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,gpio,i2c,spi tedi
+sudo su - tedi
+sudo pkill -u pi
+sudo passwd --lock pi
+#+END_SRC
+pi user is locked and not deleted because Raspbian seems to have a lot of service dependencies on it.
+Beware that logins to pi using password is not possible anymore, but possible via ssh with a key.
+

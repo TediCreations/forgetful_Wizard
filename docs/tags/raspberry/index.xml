@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>raspberrypi on Forgetful wizard</title>
-    <link>https://tedicreations.github.io/forgetful_wizard/tags/raspberrypi/</link>
-    <description>Recent content in raspberrypi on Forgetful wizard</description>
+    <title>raspberry on Forgetful wizard</title>
+    <link>https://tedicreations.github.io/forgetful_wizard/tags/raspberry/</link>
+    <description>Recent content in raspberry on Forgetful wizard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="https://tedicreations.github.io/forgetful_wizard/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tedicreations.github.io/forgetful_wizard/tags/raspberry/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,21 +19,6 @@
       <guid>https://tedicreations.github.io/forgetful_wizard/2019/11/fresh-raspbian-installation/</guid>
       <description>Fresh Raspbian Image Burn the image in an SD Card You can use my script: https://raw.githubusercontent.com/TediCreations/.dotfiles/master/files/bin/utils/writeSDCard
 writeSDCard ~/rasbian.img  Enable headless ssh  Add a file named &amp;ldquo;ssh&amp;rdquo; inside the /boot directory. Add a file named &amp;ldquo;wpa_supplicant.conf&amp;rdquo; inside the /boot directory with the following contents.   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=us network={ ssid=&amp;quot;&amp;lt;Name of your WiFi&amp;gt;&amp;quot; psk=&amp;quot;&amp;lt;Password for your WiFi&amp;gt;&amp;quot; scan_ssid=1 }  Make it secure Change the default password of user pi</description>
-    </item>
-    
-    <item>
-      <title>Setup transmission daemon on Raspberry Pi</title>
-      <link>https://tedicreations.github.io/forgetful_wizard/2019/10/setup-transmission-daemon-on-raspberry-pi/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0300</pubDate>
-      
-      <guid>https://tedicreations.github.io/forgetful_wizard/2019/10/setup-transmission-daemon-on-raspberry-pi/</guid>
-      <description>Intro Hardware used: Raspberry Pi 3B+ Source
-Setup Update
-sudo apt update sudo apt upgrade  Install transmission
-sudo apt install transmission-daemon  We need to stop the daemon because it is automatically started.
-sudo systemctl stop transmission-daemon  Create torrent directories
-sudo mkdir -p /media/HDD/torrent-inprogress sudo mkdir -p /media/HDD/torrent-complete  Give user pi access over these directories SOS! This had no effect
-sudo chown -R pi:pi /media/HDD/torrent-inprogress sudo chown -R pi:pi /media/HDD/torrent-complete  Configure transmission Edit configuration file</description>
     </item>
     
   </channel>

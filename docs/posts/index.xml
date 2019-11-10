@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Forgetful wizard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://tedicreations.github.io/forgetful_wizard/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fresh Raspbian Installation</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2019/11/fresh-raspbian-installation/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2019/11/fresh-raspbian-installation/</guid>
+      <description>Fresh Raspbian Image Burn the image in an SD Card You can use my script: https://raw.githubusercontent.com/TediCreations/.dotfiles/master/files/bin/utils/writeSDCard
+writeSDCard ~/rasbian.img  Enable headless ssh  Add a file named &amp;ldquo;ssh&amp;rdquo; inside the /boot directory. Add a file named &amp;ldquo;wpa_supplicant.conf&amp;rdquo; inside the /boot directory with the following contents.   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 country=us network={ ssid=&amp;quot;&amp;lt;Name of your WiFi&amp;gt;&amp;quot; psk=&amp;quot;&amp;lt;Password for your WiFi&amp;gt;&amp;quot; scan_ssid=1 }  Make it secure Change the default password of user pi</description>
+    </item>
     
     <item>
       <title>Disable images at Firefox</title>
