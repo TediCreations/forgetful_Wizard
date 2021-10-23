@@ -2,7 +2,7 @@
 title = "Disable images at Firefox"
 author = ["Kanelis Elias"]
 date = 2019-10-27
-lastmod = 2019-10-27T17:45:20+02:00
+lastmod = 2019-12-01T21:43:09+02:00
 tags = ["firefox"]
 draft = false
 weight = 2001

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Forgetful wizard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://tedicreations.github.io/forgetful_wizard/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mount to a remote filesystem with sshfs</title>
+      <link>https://tedicreations.github.io/forgetful_wizard/2021/10/mount-to-a-remote-filesystem-with-sshfs/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0300</pubDate>
+      
+      <guid>https://tedicreations.github.io/forgetful_wizard/2021/10/mount-to-a-remote-filesystem-with-sshfs/</guid>
+      <description>Mount to remote filesystem over SSH with sshfs Introduction In many cases it can become cumbersome to transfer files to and from a droplet. Imagine a development usage scenario where you are coding apps remotely and find yourself uploading a script repeatedly to your virtual server to test. This can become quite a hassle in a very short period of time. Luckily there is a way to mount your VPS file system to your local computer so you can make changes on the fly and treat your droplet as local storage.</description>
+    </item>
     
     <item>
       <title>Fresh Raspbian Installation</title>

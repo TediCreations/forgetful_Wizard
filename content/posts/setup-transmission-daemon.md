@@ -2,7 +2,7 @@
 title = "Setup transmission daemon on Raspberry Pi"
 author = ["Kanelis Elias"]
 date = 2019-10-27
-lastmod = 2019-10-27T20:46:40+02:00
+lastmod = 2019-12-04T00:00:42+02:00
 tags = ["raspberrypi", "transmission"]
 categories = ["Home Server"]
 draft = false
