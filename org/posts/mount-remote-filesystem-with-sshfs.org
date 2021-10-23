@@ -14,31 +14,28 @@
 #+hugo_custom_front_matter:
 
 * Mount to remote filesystem over SSH with sshfs
-** Introduction
-In many cases it can become cumbersome to transfer files to and from a droplet. Imagine a development usage scenario where you are coding apps remotely and find yourself uploading a script repeatedly to your virtual server to test. This can become quite a hassle in a very short period of time. Luckily there is a way to mount your VPS file system to your local computer so you can make changes on the fly and treat your droplet as local storage. In this article, we will show you how to do exactly that.
-
-*** Installing SSHFS
+** Installing SSHFS
 On debian based distro.
 
 #+BEGIN_SRC bash
   sudo apt-get install sshfs
 #+END_SRC
 
-*** Mounting the Remote File System
+** Mounting the Remote File System
 Create a local directory in which to mount the remote file system.
 
 #+BEGIN_SRC bash
   sudo mkdir /mnt/name
 #+END_SRC
 
-*** Temporarily solution
-**** Temporarily with password login
+** Temporarily solution
+*** Temporarily with password login
 
 #+BEGIN_SRC bash
   sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name
 #+END_SRC
 
-**** Temporarily with ssh key authentication
+*** Temporarily with ssh key authentication
 
 #+BEGIN_SRC bash
   sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name
@@ -46,7 +43,7 @@ Create a local directory in which to mount the remote file system.
 
 It is important to note that this process provides only a temporary mount point to your droplet. If the virtual server or local machine is powered off or restarted, you will need to use the same process to mount it again.
 
-**** Unmount
+*** Unmount
 When you no longer need the mount point you can simply unmount it with the command
 
 #+BEGIN_SRC bash
@@ -54,7 +51,7 @@ When you no longer need the mount point you can simply unmount it with the comma
   sudo rmdir /mnt/name
 #+END_SRC
 
-*** Permanent solution
+** Permanent solution
 We will need to edit the /etc/fstab file on the local machine to automatically mount the file system each time the system is booted.
 
 First we need to edit the /etc/fstab file with a text editor.
@@ -71,5 +68,5 @@ sshfs#root@xxx.xxx.xxx.xxx:/ /mnt/droplet
 
 Save the changes and reboot.
 
-**** Warning
+** Warning
 It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your droplet. Therefore it is not recommended to setup permanent mounts on production servers.

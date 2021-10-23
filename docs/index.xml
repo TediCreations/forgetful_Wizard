@@ -17,7 +17,9 @@
       <pubDate>Sat, 23 Oct 2021 00:00:00 +0300</pubDate>
       
       <guid>https://tedicreations.github.io/forgetful_wizard/2021/10/mount-to-a-remote-filesystem-with-sshfs/</guid>
-      <description>Mount to remote filesystem over SSH with sshfs Introduction In many cases it can become cumbersome to transfer files to and from a droplet. Imagine a development usage scenario where you are coding apps remotely and find yourself uploading a script repeatedly to your virtual server to test. This can become quite a hassle in a very short period of time. Luckily there is a way to mount your VPS file system to your local computer so you can make changes on the fly and treat your droplet as local storage.</description>
+      <description>Mount to remote filesystem over SSH with sshfs Installing SSHFS On debian based distro.
+sudo apt-get install sshfs  Mounting the Remote File System Create a local directory in which to mount the remote file system.
+sudo mkdir /mnt/name  Temporarily solution Temporarily with password login sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name  Temporarily with ssh key authentication sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name  It is important to note that this process provides only a temporary mount point to your droplet.</description>
     </item>
     
     <item>

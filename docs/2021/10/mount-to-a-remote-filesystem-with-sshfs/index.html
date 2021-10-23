@@ -12,14 +12,18 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mount to a remote filesystem with sshfs"/>
-<meta name="twitter:description" content="Mount to remote filesystem over SSH with sshfs Introduction In many cases it can become cumbersome to transfer files to and from a droplet. Imagine a development usage scenario where you are coding apps remotely and find yourself uploading a script repeatedly to your virtual server to test. This can become quite a hassle in a very short period of time. Luckily there is a way to mount your VPS file system to your local computer so you can make changes on the fly and treat your droplet as local storage."/>
+<meta name="twitter:description" content="Mount to remote filesystem over SSH with sshfs Installing SSHFS On debian based distro.
+sudo apt-get install sshfs  Mounting the Remote File System Create a local directory in which to mount the remote file system.
+sudo mkdir /mnt/name  Temporarily solution Temporarily with password login sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name  Temporarily with ssh key authentication sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name  It is important to note that this process provides only a temporary mount point to your droplet."/>
 
     <meta property="og:title" content="Mount to a remote filesystem with sshfs" />
-<meta property="og:description" content="Mount to remote filesystem over SSH with sshfs Introduction In many cases it can become cumbersome to transfer files to and from a droplet. Imagine a development usage scenario where you are coding apps remotely and find yourself uploading a script repeatedly to your virtual server to test. This can become quite a hassle in a very short period of time. Luckily there is a way to mount your VPS file system to your local computer so you can make changes on the fly and treat your droplet as local storage." />
+<meta property="og:description" content="Mount to remote filesystem over SSH with sshfs Installing SSHFS On debian based distro.
+sudo apt-get install sshfs  Mounting the Remote File System Create a local directory in which to mount the remote file system.
+sudo mkdir /mnt/name  Temporarily solution Temporarily with password login sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name  Temporarily with ssh key authentication sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name  It is important to note that this process provides only a temporary mount point to your droplet." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tedicreations.github.io/forgetful_wizard/2021/10/mount-to-a-remote-filesystem-with-sshfs/" />
 <meta property="article:published_time" content="2021-10-23T00:00:00+03:00" />
-<meta property="article:modified_time" content="2021-10-23T19:43:14+03:00" />
+<meta property="article:modified_time" content="2021-10-23T19:51:40+03:00" />
 
 
   </head>
@@ -78,59 +82,43 @@
 
 <h2 id="mount-to-remote-filesystem-over-ssh-with-sshfs">Mount to remote filesystem over SSH with sshfs</h2>
 
-<h3 id="introduction">Introduction</h3>
-
-<p>In many cases it can become cumbersome to transfer files to and from a droplet. Imagine a development usage scenario where you are coding apps remotely and find yourself uploading a script repeatedly to your virtual server to test. This can become quite a hassle in a very short period of time. Luckily there is a way to mount your VPS file system to your local computer so you can make changes on the fly and treat your droplet as local storage. In this article, we will show you how to do exactly that.</p>
-
-<h4 id="installing-sshfs">Installing SSHFS</h4>
+<h3 id="installing-sshfs">Installing SSHFS</h3>
 
 <p>On debian based distro.</p>
 
 <pre><code class="language-bash">sudo apt-get install sshfs
 </code></pre>
 
-<h4 id="mounting-the-remote-file-system">Mounting the Remote File System</h4>
+<h3 id="mounting-the-remote-file-system">Mounting the Remote File System</h3>
 
 <p>Create a local directory in which to mount the remote file system.</p>
 
 <pre><code class="language-bash">sudo mkdir /mnt/name
 </code></pre>
 
-<h4 id="temporarily-solution">Temporarily solution</h4>
+<h3 id="temporarily-solution">Temporarily solution</h3>
 
-<!--list-separator-->
-
-<ul>
-<li><p>Temporarily with password login</p>
+<h4 id="temporarily-with-password-login">Temporarily with password login</h4>
 
 <pre><code class="language-bash">sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name
-</code></pre></li>
-</ul>
+</code></pre>
 
-<!--list-separator-->
-
-<ul>
-<li><p>Temporarily with ssh key authentication</p>
+<h4 id="temporarily-with-ssh-key-authentication">Temporarily with ssh key authentication</h4>
 
 <pre><code class="language-bash">sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name
 </code></pre>
 
-<p>It is important to note that this process provides only a temporary mount point to your droplet. If the virtual server or local machine is powered off or restarted, you will need to use the same process to mount it again.</p></li>
-</ul>
+<p>It is important to note that this process provides only a temporary mount point to your droplet. If the virtual server or local machine is powered off or restarted, you will need to use the same process to mount it again.</p>
 
-<!--list-separator-->
-
-<ul>
-<li><p>Unmount</p>
+<h4 id="unmount">Unmount</h4>
 
 <p>When you no longer need the mount point you can simply unmount it with the command</p>
 
 <pre><code class="language-bash">sudo umount /mnt/name
 sudo rmdir /mnt/name
-</code></pre></li>
-</ul>
+</code></pre>
 
-<h4 id="permanent-solution">Permanent solution</h4>
+<h3 id="permanent-solution">Permanent solution</h3>
 
 <p>We will need to edit the /etc/fstab file on the local machine to automatically mount the file system each time the system is booted.</p>
 
@@ -146,13 +134,9 @@ sudo rmdir /mnt/name
 
 <p>Save the changes and reboot.</p>
 
-<!--list-separator-->
+<h3 id="warning">Warning</h3>
 
-<ul>
-<li><p>Warning</p>
-
-<p>It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your droplet. Therefore it is not recommended to setup permanent mounts on production servers.</p></li>
-</ul>
+<p>It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your droplet. Therefore it is not recommended to setup permanent mounts on production servers.</p>
 
     </div>
     <div class="post-footer">
