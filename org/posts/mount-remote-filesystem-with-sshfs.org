@@ -32,13 +32,13 @@ Create a local directory in which to mount the remote file system.
 *** Temporarily with password login
 
 #+BEGIN_SRC bash
-  sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name
+  sudo sshfs -o allow_other,reconnect user@ip_address:/ /mnt/name
 #+END_SRC
 
 *** Temporarily with ssh key authentication
 
 #+BEGIN_SRC bash
-  sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name
+  sudo sshfs -o allow_other,reconnect,IdentityFile=/home/user/.ssh/id_rsa user@ip_address:/ /mnt/name/
 #+END_SRC
 
 It is important to note that this process provides only a temporary mount point to your droplet. If the virtual server or local machine is powered off or restarted, you will need to use the same process to mount it again.
@@ -63,7 +63,7 @@ First we need to edit the /etc/fstab file with a text editor.
 Add the following entry to the bottom of the file.
 
 #+begin_example
-sshfs#root@xxx.xxx.xxx.xxx:/ /mnt/droplet
+sshfs#user@ip_address:/ /mnt/name
 #+end_example
 
 Save the changes and reboot.

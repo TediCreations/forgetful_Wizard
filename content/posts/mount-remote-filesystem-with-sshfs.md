@@ -2,7 +2,7 @@
 title = "Mount to a remote filesystem with sshfs"
 author = ["Kanelis Elias"]
 date = 2021-10-23
-lastmod = 2021-10-23T19:51:40+03:00
+lastmod = 2021-10-23T21:42:53+03:00
 tags = ["sshfs", "mount"]
 draft = false
 weight = 2001
@@ -35,14 +35,14 @@ sudo mkdir /mnt/name
 #### Temporarily with password login {#temporarily-with-password-login}
 
 ```bash
-sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name
+sudo sshfs -o allow_other,reconnect user@ip_address:/ /mnt/name
 ```
 
 
 #### Temporarily with ssh key authentication {#temporarily-with-ssh-key-authentication}
 
 ```bash
-sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name
+sudo sshfs -o allow_other,reconnect,IdentityFile=/home/user/.ssh/id_rsa user@ip_address:/ /mnt/name/
 ```
 
 It is important to note that this process provides only a temporary mount point to your droplet. If the virtual server or local machine is powered off or restarted, you will need to use the same process to mount it again.
@@ -71,7 +71,7 @@ sudo nano /etc/fstab
 Add the following entry to the bottom of the file.
 
 ```text
-sshfs#root@xxx.xxx.xxx.xxx:/ /mnt/droplet
+sshfs#user@ip_address:/ /mnt/name
 ```
 
 Save the changes and reboot.

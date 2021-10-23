@@ -19,7 +19,7 @@
       <guid>https://tedicreations.github.io/forgetful_wizard/2021/10/mount-to-a-remote-filesystem-with-sshfs/</guid>
       <description>Mount to remote filesystem over SSH with sshfs Installing SSHFS On debian based distro.
 sudo apt-get install sshfs  Mounting the Remote File System Create a local directory in which to mount the remote file system.
-sudo mkdir /mnt/name  Temporarily solution Temporarily with password login sudo sshfs -o allow_other,default_permissions user@ip_address:/ /mnt/name  Temporarily with ssh key authentication sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa user@ip_address:/ /mnt/name  It is important to note that this process provides only a temporary mount point to your droplet.</description>
+sudo mkdir /mnt/name  Temporarily solution Temporarily with password login sudo sshfs -o allow_other,reconnect user@ip_address:/ /mnt/name  Temporarily with ssh key authentication sudo sshfs -o allow_other,reconnect,IdentityFile=/home/user/.ssh/id_rsa user@ip_address:/ /mnt/name/  It is important to note that this process provides only a temporary mount point to your droplet.</description>
     </item>
     
     <item>
