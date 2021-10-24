@@ -23,7 +23,7 @@ sudo mkdir /mnt/name  Temporarily solution Temporarily with password login sudo 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tedicreations.github.io/forgetful_wizard/2021/10/mount-to-a-remote-filesystem-with-sshfs/" />
 <meta property="article:published_time" content="2021-10-23T00:00:00+03:00" />
-<meta property="article:modified_time" content="2021-10-23T21:42:53+03:00" />
+<meta property="article:modified_time" content="2021-10-24T16:44:34+03:00" />
 
 
   </head>
@@ -127,16 +127,20 @@ sudo rmdir /mnt/name
 <pre><code class="language-bash">sudo nano /etc/fstab
 </code></pre>
 
-<p>Add the following entry to the bottom of the file.</p>
+<p>Add the following entry to the bottom of the file. (there is extra option for automount to work for systemd)
+Links with sources:
+<a href="https://man.archlinux.org/man/mount.8#FILESYSTEM-INDEPENDENT%5FMOUNT%5FOPTIONS">https://man.archlinux.org/man/mount.8#FILESYSTEM-INDEPENDENT%5FMOUNT%5FOPTIONS</a>
+<a href="https://superuser.com/questions/669287/automount-sshfs-using-fstab-without-mount-a">https://superuser.com/questions/669287/automount-sshfs-using-fstab-without-mount-a</a></p>
 
-<pre><code class="language-text">sshfs#user@ip_address:/ /mnt/name
+<pre><code class="language-text">user@ip_address:/  /mnt/name  fuse.sshfs  x-systemd.automount,noauto,_netdev,nouser,idmap=user,transform_symlinks,identityfile=/home/tedi/.ssh/id_rsa_jason,allow_other,uid=REMOTE_USER_ID,gid=REMOTE_GROUP_ID,sync,noatime,reconnect,rw 0 0
 </code></pre>
 
 <p>Save the changes and reboot.</p>
 
 <h3 id="warning">Warning</h3>
 
-<p>It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your droplet. Therefore it is not recommended to setup permanent mounts on production servers.</p>
+<p>It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your remote.
+Therefore it is not recommended to setup permanent mounts on production servers.</p>
 
     </div>
     <div class="post-footer">

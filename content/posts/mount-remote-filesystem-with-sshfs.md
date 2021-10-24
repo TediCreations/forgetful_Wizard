@@ -2,7 +2,7 @@
 title = "Mount to a remote filesystem with sshfs"
 author = ["Kanelis Elias"]
 date = 2021-10-23
-lastmod = 2021-10-23T21:42:53+03:00
+lastmod = 2021-10-24T16:44:34+03:00
 tags = ["sshfs", "mount"]
 draft = false
 weight = 2001
@@ -68,10 +68,13 @@ First we need to edit the /etc/fstab file with a text editor.
 sudo nano /etc/fstab
 ```
 
-Add the following entry to the bottom of the file.
+Add the following entry to the bottom of the file. (there is extra option for automount to work for systemd)
+Links with sources:
+<https://man.archlinux.org/man/mount.8#FILESYSTEM-INDEPENDENT%5FMOUNT%5FOPTIONS>
+<https://superuser.com/questions/669287/automount-sshfs-using-fstab-without-mount-a>
 
 ```text
-sshfs#user@ip_address:/ /mnt/name
+user@ip_address:/  /mnt/name  fuse.sshfs  x-systemd.automount,noauto,_netdev,nouser,idmap=user,transform_symlinks,identityfile=/home/tedi/.ssh/id_rsa_jason,allow_other,uid=REMOTE_USER_ID,gid=REMOTE_GROUP_ID,sync,noatime,reconnect,rw 0 0
 ```
 
 Save the changes and reboot.
@@ -79,4 +82,5 @@ Save the changes and reboot.
 
 ### Warning {#warning}
 
-It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your droplet. Therefore it is not recommended to setup permanent mounts on production servers.
+It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your remote.
+Therefore it is not recommended to setup permanent mounts on production servers.

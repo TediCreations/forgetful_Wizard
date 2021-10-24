@@ -60,13 +60,17 @@ First we need to edit the /etc/fstab file with a text editor.
   sudo nano /etc/fstab
 #+END_SRC
 
-Add the following entry to the bottom of the file.
+Add the following entry to the bottom of the file. (there is extra option for automount to work for systemd)
+Links with sources:
+https://man.archlinux.org/man/mount.8#FILESYSTEM-INDEPENDENT_MOUNT_OPTIONS
+https://superuser.com/questions/669287/automount-sshfs-using-fstab-without-mount-a
 
 #+begin_example
-sshfs#user@ip_address:/ /mnt/name
+user@ip_address:/  /mnt/name  fuse.sshfs  x-systemd.automount,noauto,_netdev,nouser,idmap=user,transform_symlinks,identityfile=/home/tedi/.ssh/id_rsa_jason,allow_other,uid=REMOTE_USER_ID,gid=REMOTE_GROUP_ID,sync,noatime,reconnect,rw 0 0
 #+end_example
 
 Save the changes and reboot.
 
 ** Warning
-It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your droplet. Therefore it is not recommended to setup permanent mounts on production servers.
+It should be noted that permanently mounting your VPS file system locally is a potential security risk. If your local machine is compromised it allows for a direct route to your remote.
+Therefore it is not recommended to setup permanent mounts on production servers.
